@@ -41,7 +41,7 @@ If you do not provide arguments, the program will prompt you to input the follow
 ## Example of Running the Program
 
 ```java
-java ImageProcessor image.jpg 10 M
+java ImageProcessor image.jpg 20 M
 ```
 
 This will process ```image.jpg``` using multi-threaded mode with a square size of 10 pixels. Result will be saved as ```result.jpg``` file in the same folder.

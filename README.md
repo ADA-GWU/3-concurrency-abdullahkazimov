@@ -1,6 +1,6 @@
 # Image Processor
 
-This program allows you to process a JPG or JPEG image by applying an average color filter over square blocks of the image. You can choose between single-threaded or multi-threaded modes for processing. The program also measures the time taken for processing in milliseconds with 3 digits of accuracy.
+This program allows you to process a JPG image by applying an average color filter over square blocks of the image. You can choose between single-threaded or multi-threaded modes for processing. The program also measures the time taken for processing in milliseconds with 3 digits of accuracy.
 
 ## Requirements
 

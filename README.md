@@ -46,6 +46,14 @@ java ImageProcessor image.jpg 10 M
 
 This will process ```image.jpg``` using multi-threaded mode with a square size of 10 pixels. Result will be saved as ```result.jpg``` file in the same folder.
 
+Sample input:
+
+![Image Processor](./JH_profile.jpg)
+
+Sample output:
+
+![Image Processor](./result.jpg)
+
 ## Notes
 - The input image must be in JPG or JPEG format. If the file is not a valid image or not in JPG format, the program will ask you to re-enter the correct file.
 - If the square size entered is not a positive integer, the program will ask you to re-enter it.

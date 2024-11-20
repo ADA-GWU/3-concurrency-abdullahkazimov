@@ -55,6 +55,6 @@ Sample output:
 ![Image Processor](./result.jpg)
 
 ## Notes
-- The input image must be in JPG or JPEG format. If the file is not a valid image or not in JPG format, the program will ask you to re-enter the correct file.
+- The input image must be in JPG format. If the file is not a valid image or not in JPG format, the program will ask you to re-enter the correct file.
 - If the square size entered is not a positive integer, the program will ask you to re-enter it.
 - If the mode is invalid (anything other than S or M), the program will ask you to re-enter it.

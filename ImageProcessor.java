@@ -78,6 +78,9 @@ public class ImageProcessor {
         // Load the image based on the file name provided
         BufferedImage image = ImageIO.read(new File(fileName));
 
+        // Measure the start time before processing
+        long startTime = System.currentTimeMillis();
+
         // Depending on the mode, process the image either single-threaded or multi-threaded
         if (mode.equals("S")) {
             processSingleThreaded(image, squareSize);
@@ -85,10 +88,17 @@ public class ImageProcessor {
             processMultiThreaded(image, squareSize);
         }
 
+        // Measure the end time after processing
+        long endTime = System.currentTimeMillis();
+
+        // Calculate and print the time spent in milliseconds (with 3 digits of accuracy)
+        long timeSpent = endTime - startTime;
+        System.out.printf("Processing complete. Time spent: %03d ms\n", timeSpent);
+
         // Save the processed image to a new file
         File outputFile = new File("result.jpg");
         ImageIO.write(image, "jpg", outputFile);
-        System.out.println("Processing complete. Result saved as result.jpg");
+        System.out.println("Result saved as result.jpg");
     }
 
     // Method to process the image in a single-threaded way
